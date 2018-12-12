@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+}
+.title{
+  font-family: 'Pacifico', cursive;
+  font-size: 5rem;
+  font-weight: 900;
+}
+.big{
+  font-size: 8rem;
+}
+.header{
+  padding: 2% 15% 3%;
+}
+.introTxt{
+  font-family: 'Montserrat', sans-serif;
+  padding: 1% 20%;
+}
+.displayArea{
+  display: inline-block;
+  height:20rem;
+  width: 20rem;
+  border: solid;
+  border-radius: 100%;
+}
+.ColorCode{
+  position: relative;
+  top:13rem;
+}
+
+.interaction{
+  padding: 3% 15%;
+}
+.footer{
+  padding-top: 1%;
+}
