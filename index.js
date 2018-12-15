@@ -1,23 +1,16 @@
 
-function colorChange(r,g,b,item){
-  item.style.borderColor = "rgb("+r+","+g+","+b+")";
-  // item.style.backgroundColor = "rgb("+(255-r)+","+(255-g)+","+(255-b)+")";
-}
-function showColor(r,g,b,item){
-  item.innerHTML = "<span class='ColorCode'>RED: "+r+ " GREEN: "+g+" BLUE: "+b+"</span>";
-  item.style.color = "rgb("+r+","+g+","+b+")";
-}
-
 
 function randomColor(){
   var redCode = Math.floor(Math.random()*256);
   var greenCode = Math.floor(Math.random()*256);
   var blueCode = Math.floor(Math.random()*256);
-  var item = document.querySelector(".displayArea");
-  var borderItem = item;
-  colorChange(redCode,greenCode,blueCode,borderItem);
-  showColor(redCode,greenCode,blueCode,item);
+  var colorCode = "rgb("+redCode+","+greenCode+","+blueCode+")";
+  $(".displayArea").css("color",colorCode);
+  $(".displayArea").css("borderColor",colorCode);
+  $(".displayArea").html("<span class='ColorCode'>RED: "+redCode+ " GREEN: "+greenCode+" BLUE: "+blueCode+"</span>");
 }
 
 
-document.querySelector(".interaction button").setAttribute("onclick","randomColor();");
+// document.querySelector(".interaction button").setAttribute("onclick","randomColor();");
+$(".interaction button").on("click", randomColor);
+$(".displayArea").on("click",randomColor);

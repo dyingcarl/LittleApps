@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .title{
   font-family: 'Pacifico', cursive;
@@ -13,7 +14,6 @@ body{
   padding: 2% 15% 3%;
 }
 .introTxt{
-  font-family: 'Montserrat', sans-serif;
   padding: 1% 20%;
 }
 .displayArea{
@@ -22,15 +22,56 @@ body{
   width: 20rem;
   border: solid;
   border-radius: 100%;
+  border-width: thick;
 }
 .ColorCode{
   position: relative;
   top:13rem;
 }
 
-.interaction{
-  padding: 3% 15%;
+.siteLink{
+  color: black;
+  padding: 2%;
+  text-decoration: none;
+}
+.siteLink:hover{
+  color: silver;
+  text-decoration: none;
 }
 .footer{
   padding-top: 1%;
+}
+/* DrumKit CSS */
+.gameBoard{
+  /* align-center */
+  margin: 0 auto;
+  height: 60%;
+  width: 60%;
+  border-style: double;
+  padding: 3% 15%;
+}
+.hit{
+  display: inline-block;
+  padding: 2%;
+}
+
+.board-row{
+}
+.hit-char{
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+  margin:0 auto 0.5rem;
+}
+
+.start-btn{
+  margin-top: 5rem;
+}
+
+.key{
+  background-color: #000;
+  height: 80%;
+  width: 80%;
+  margin: auto;
 }
